@@ -1,0 +1,46 @@
+.theme {
+    --font: 'Helvetica Neue', Roboto, Arial, sans-serif;
+    
+    --text-size-xxs: 10px;
+    --text-size-xs: 12px;
+    --text-size-s: 14px;
+    --text-size-m: 16px;
+    --text-size-l: 20px;
+    --text-size-2xl: 48px;
+  }
+  
+  .theme_color_default {
+    --color-bg-default: #fff;
+    
+    --color-text-primary: #020202;
+    --color-text-secondary: #555;
+    --color-text-action: #1aaded;
+    --color-text-button: #fff;
+    
+    --color-control-secondary: #f5f5f5;
+    --color-control-primary: #020207;
+  }
+  
+  .theme_color_dark {
+    --color-bg-default: #252527;
+    
+    --color-text-primary: #fff;
+    --color-text-secondary: #dbdbdb;
+    --color-text-action: #1aaded;
+    --color-text-button: #020202;
+    
+    --color-control-secondary: #f5f5f5;
+    --color-control-primary: #fff;
+  }
+  
+  .theme_color_blue {
+    --color-bg-default: #00f;
+    
+    --color-text-primary: #fff;
+    --color-text-secondary: #dbdbdb;
+    --color-text-action: #1aaded;
+    
+    --color-control-secondary: orange;
+    --color-control-primary: #f00;
+  }
+  

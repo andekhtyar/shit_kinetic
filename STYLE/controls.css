@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__side {
+      display: flex;
+      align-items: baseline;
+    }
+
+    .burger {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        color: var(--color-text-primary);
+      }
+      
+      .burger::before, .burger::after {
+          content: '';
+          position: absolute;
+          width: 16px;
+          height: 2px;
+          border-radius: 1px;
+          background-color: currentColor;
+          transition: opacity 0.2s 0.1s, transform 0.2s 0.1s;
+        }
+      
+      .burger::before {
+          top: 4px;
+          right: 0;
+        }
+      
+      .burger::after {
+          bottom: 4px;
+          left: 0;
+        }
+      
+      .burger__middle-line {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          border-radius: 1px;
+          background-color: currentColor;
+          top: 50%;
+          transform: translatey(-50%);
+          transition: transform 0.2s 0.1s;
+        }
+      
+      .burger__middle-line::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 1px;
+            background-color: currentColor;
+            transition: transform 0.2s 0.1s;
+          }
+      
+      .burger:hover::before {
+            opacity: 0;
+            transform: translatex(50%);
+            transition-delay: 0;
+          }
+      
+      .burger:hover::after {
+            opacity: 0;
+            transform: translatex(-50%);
+            transition-delay: 0;
+          }
+      
+      .burger:hover .burger__middle-line {
+            transform: translatey(-50%) rotate(-45deg);
+            transition-delay: 0s;
+          }
+      
+      .burger:hover .burger__middle-line::before {
+              transform: rotate(-90deg);
+              transition-delay: 0s;
+            }
+      
