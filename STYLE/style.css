@@ -276,7 +276,7 @@ body {
     font-weight: 500;
   }
 
-.text-card__header-description{
+.text-card__з{
     font-size: var(--text-size-s);
     margin-bottom: 12px;
     font-weight: 400;
@@ -469,7 +469,7 @@ hr {
 .card {
   height: 260px; 
   /* Как лучше задать размер? */
-  width: 3span; 
+  /* width: 100%;  */
   /* Можно ли так? */
   background-color: var(--color-bg-default);
   padding: 40px;
